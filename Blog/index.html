@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Links and title -->
+        <link rel="icon" href='Images/sofa.png'>
+        <link rel="stylesheet" href="index.css" />
+        <title>Shopping Site Blog</title>
+
+        <!-- Meta Links -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Container for holding the navigation bar -->
+        <div class="container1">
+            <h1>Furniture Store Blog</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <button><a href="#">Login</a></button>
+            </ul>
+        </div>
+
+        <!-- Container for the main body describing the tagline and image -->
+        <div class="container-2">
+            <h1>Furniture that <br/> everyone <br/>Loves</h1>
+            <p>We have 5000+ Review and our customers trust on our <br/>Furniture and Quality Products</p>
+            <button id="btn-1"><a href="#">Buy Now</a></button>
+            <button id="btn-2"><a href="#">Explore</a></button>
+            <br/>
+            <br/>
+            <img id="sofa" src="Images/sofa.png"/>
+        </div>
+        <div class="container-3">
+            <h1>Why we are <br/>best in our<br/>Town</h1>
+            <button id="circle-btn">➡</button>
+
+            <!-- Three divs to make the cards holding the chairs image and its consecutive price -->
+            <div class="card-1">
+                <img id="box-1" src="Images/chair-box-1.png" />
+                <p>Steel chair <br/>with metal stand</p>
+                <h2>Rs. 5,000</h2>
+            </div>
+
+            <div class="card-2">
+                <img id="box-1" src="Images/chair-box-1.png" />
+                <p>Steel chair <br/>with metal stand</p>
+                <h2>Rs. 10,000</h2>
+            </div>
+
+            <div class="card-3">
+                <img id="box-1" src="Images/chair-box-1.png" />
+                <p>Steel chair <br/>with metal stand</p>
+                <h2>Rs. 15,000</h2>
+            </div>
+        </div>
+
+        <!-- Profile photo of one customer and his comments on the product -->
+            <div class="container-element"> 
+            <div class="blog-area">
+                <div class="main-body">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> 
+            </div>
+            </div>
+            <div class="right-text">
+                <h1>BLOG-1 : (Updated few minutes ago) What are customers are telling?</h1>
+                <p>Prince Yadav: This furniture store sells authentic wooden furnitures at reasonable prices. Before I make into any discision, I searched web and came up with this store. It sells in PAN India. You  can book your furniture in online also. Its a very good store with many many demonstrations of furnitures starting from sofa sets to office interiors. So I will recommend each and everyone to make a space and come to this store and order some stuffs. Happy Shopping!!! 
+                </p>
+            </div>
+        </div>
+        
+        <!-- Blog Table to input the data, delete or update -->
+        <div class="blog-form">
+
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="productCode" class="item">Title</label>
+                            <input type="text" name="productCode" id="productCode">
+                        </div>
+                        <div>
+                            <label for="product" class="item">Description</label>
+                            <input type="text" name="product" id="product">
+                        </div>
+                        <div>
+                            <label for="qty" class="item">Quantity (In nos.)</label>
+                            <input type="number" name="qty" id="qty">
+                        </div>
+                        <div>
+                            <label for="perPrice" class="item">Amount</label>
+                            <input type="number" name="perPrice" id="perPrice">
+                        </div>
+    
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit" id="sub">
+                            <input type="reset" value="Reset" id="res">
+                        </div>
+                    </form>
+    
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th class="code">Title</th>
+                                    <th class="code"> Description</th>
+                                    <th class="code">Quantity </th>
+                                    <th class="code">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
